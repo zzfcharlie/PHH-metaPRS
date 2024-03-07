@@ -107,7 +107,7 @@ height_predict <- function(G,map,gender_ID_list_dir,match_by_pos=TRUE,height_mat
   py_run_string(paste0("gender_ID_list_dir = '", gender_ID_list_dir, "'"))
   py_run_string(paste0("material_dir = '", height_material_dir, "'"))
   py_run_string(paste0("result_dir = '", result_dir, "'"))
-  message('calculate_nonlinear_results...\n')
+  message('Calculating nonlinear results...\n')
   source_python(paste(height_material_dir,'/predict.py',sep=''))
   message('Done!\n')
   end_time_c <- Sys.time()
