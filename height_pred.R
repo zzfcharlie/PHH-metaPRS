@@ -68,7 +68,7 @@ height_predict <- function(G,map,gender_ID_list_dir,match_by_pos=TRUE,height_mat
   
   message('Start calculating...\n')
   start_time_c = Sys.time()
-  message('Calculate linear results...\n')
+  message('Calculating linear results...\n')
   male_linear_part <- big_prodVec(G,snp_male_match.linear$beta,ind.col = snp_male_match.linear$`_NUM_ID_`,ind.row = ind_male.test,ncores = Ncores)
   female_linear_part <- big_prodVec(G,snp_female_match.linear$beta,ind.col = snp_female_match.linear$`_NUM_ID_`,ind.row = ind_female.test,ncores = Ncores)
   message('Done!\n')
