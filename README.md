@@ -1,7 +1,12 @@
 # PHH-metaPRS
 PHH-metaPRS (Predicting Human Height with meta-PRS) is  a meta-PRS height prediction model for men and women, which included nine sets of PRSs, namely three sets of PRSs directly calculated by three GIANT Height PRS weight (‘ALL’, ‘EAS’, ‘EUR’), three sets of PRSs calculated by PRScs based on three GIANT Height GWAS (‘ALL’, ‘EAS’ for men, ‘EUR’, ‘HIS’ for women), two sets of PRSs calculated by PCNN based on a GIANT Height GWAS (‘ALL’ for men, ‘EAS’ for women) and a Biobank Japan Height GWAS (‘BBJ’), and one set of PRS calculated by PLR based on a Wegene height GWAS. 
 
-Note: The model only works when the coverage between variants and summary statistics is larger than 0.4. If you want the prediction value even if the coverage rate is low, you can modify the default threshold value of ```coverage_threshold``` in 'height_pred.r'.
+Note: 
+The model only works when the coverage between variants and summary statistics is larger than 0.4. If you want the prediction value even if the coverage rate is lower than 0.4, you can modify the default threshold value of ```coverage_threshold``` in 'height_pred.r'. 
+
+
+Download 'height_material.zip' through the link https://drive.google.com/file/d/1uJeO0-iTJl8eFPRWw6lSBFoJlazAGAlu/view and unzip to directory 'PHH-metaPRS/'.
+
 
 
 
@@ -19,7 +24,7 @@ R: bigsnpr, dplyr, data.table, Matrix, doParallel, recticulate, and all of their
 ## An example to make prediction on testing data:
 
 ### STEP 1: Set up Python environment and install R packages.
-We recommend you use conda to manage dependencies in different environments. If Conda hasn't been installed on your system yet, please visit https://www.anaconda.com/download for detailed installation information. Our analyses are currently conducted on CPU, and we are considering using GPU devices to train PyTorch model in the future. Refer to https://pytorch.org/get-started/locally/ for instructions on installing PyTorch, with steps varying based on your operating system.
+We recommend you use conda to manage dependencies in different environments. If Conda hasn't been installed on your system yet, please visit https://www.anaconda.com/download for detailed installation information. Our analyses are currently conducted on CPU. Refer to https://pytorch.org/get-started/locally/ for instructions on installing PyTorch, with steps varying based on your operating system.
 
 First, create and activate a conda environment and install the Python packages. (Please skip this step if you've already done this before.)
 ```
