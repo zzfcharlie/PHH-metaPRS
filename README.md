@@ -5,7 +5,7 @@ Note:
 The model only works when the coverage between variants and summary statistics is larger than 0.4. If you want the prediction value even if the coverage rate is lower than 0.4, you can modify the default threshold value of ```coverage_threshold``` in 'height_pred.r'. 
 
 
-Download 'height_material.zip' through the link https://drive.google.com/file/d/1uJeO0-iTJl8eFPRWw6lSBFoJlazAGAlu/view and unzip to directory 'PHH-metaPRS/'.
+Download 'height_material.zip' through the link https://drive.google.com/file/d/1FMZmaWr2g-BKSYQAwhIH4gjLzbVK5TkR/view and unzip to directory 'PHH-metaPRS/'.
 
 
 
