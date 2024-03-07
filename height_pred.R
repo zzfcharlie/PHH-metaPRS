@@ -116,7 +116,7 @@ height_predict <- function(G,map,gender_ID_list_dir,match_by_pos=TRUE,height_mat
   height <- round((pred_nonlinear + pred_linear +pred_intercept),1)
   height_result <- (data.frame(ID = gender_list$ID,gender = gender_list$gender, height = as.numeric(height)))
   fwrite(height_result,paste(result_dir,'/height_result.txt',sep = ''),col.names = TRUE,row.names = FALSE,sep='\t')
-  message(paste('Result is stored in ',result_dir,'height_result.txt',sep = ''))
+  message(paste('Result is stored in ',result_dir,'/height_result.txt',sep = ''))
   return(height_result)
 }
 
